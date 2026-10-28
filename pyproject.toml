@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sleesis-kvcache_jd007"
+version = "0.1.0"
+description = "解析时间标记，排列KV Cache 与显存优化工程师·张量并行切分策略的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "sleesis" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://sleesis.github.io"
+Repository = "https://github.com/sleesis/kvcache_jd007"
+Issues = "https://github.com/sleesis/kvcache_jd007/issues"
+
+[project.scripts]
+kvcache_jd007 = "kvcache_jd007:main"
+
+[tool.setuptools]
+py-modules = ["kvcache_jd007"]
